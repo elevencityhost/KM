@@ -55,7 +55,6 @@ else
 	# sudo $target/splunkforwarder/bin/splunk start --accept-license
 fi
 check_process_again=`sudo ps -ef|grep splunk`
-echo check_process_again
 if [[ $check_process_again =~ "pid=" ]];then
 	echo "You have successfully installed splunk uniforwarder !!!"
 else
